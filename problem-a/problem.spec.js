@@ -162,8 +162,6 @@ describe('Includes required CSS rules', () => {
     let logo = $('.logo');
 
     expect(logo.parent('a[href="#"]').length).toEqual(1); //logo in correct link element
-    
-    expect(logo.text()).toMatch("&nbsp"); //includes non-breaking space
 
     let correctPadding = (logo.css('padding') === '0 1em') || (logo.css('padding') === '0 1em 0 1em') || 
                   ( (logo.css('padding-left') === '1em' && logo.css('padding-right') === '1em') )
