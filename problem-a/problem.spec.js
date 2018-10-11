@@ -131,7 +131,7 @@ describe('Includes required CSS rules', () => {
 
     let searchButton = $('.searchBox').children('button');
     expect(searchButton.children().length).toEqual(1); //button contains one element
-    expect(searchButton.children('.fa').length).toEqual(1); //button's content is Font Awesome icon
+    expect(searchButton.children('.fas').length).toEqual(1); //button's content is Font Awesome icon
     expect(searchButton.text()).not.toMatch(/Search/); //button doesn't show word "Search"
 
     expect(searchButton.css('height')).toEqual('2.5rem');
